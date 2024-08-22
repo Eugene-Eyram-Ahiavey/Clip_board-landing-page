@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 *{
 margin: 0;
 padding: 0;
 box-sizing:border-box;
+font-family: "Bai Jamjuree", sans-serif;
+font-style:normal;
 }
 
 :root{
@@ -10,6 +15,7 @@ box-sizing:border-box;
 --gb:hsl(201, 11%, 66%);
 --dark-gb:hsl(210, 10%, 33%);
 --white:#fff;
+--light-gray:#f5f6f8;
 }
 
 main .hero{
@@ -28,9 +34,13 @@ padding-top: 5rem;
 main .hero-text{
 text-align: center;
 }
+main .hero-text h2{
+font-weight: 600;
+}
 
 main .hero-text p{
 line-height: 1.3;
+opacity: 0.6;
 }
 main .hero-text .buttons{
 padding-top:1.3rem;
@@ -83,17 +93,34 @@ padding-left: 5rem;
 /* border: 2px solid blue; */
 width: 100%;
 }
+.mac-texts .keep h3{
+font-weight: 600;
+}
+.mac-texts .keep p{
+opacity: 0.6;
+}
 .mac-texts .texts .word{
 padding-bottom: 1.3rem;
+}
+
+.word h4{
+font-weight:600;
 }
 .word p{
 padding-top: 0.7rem;
 line-height: 1.3;
+opacity: 0.6;
 }
 
 main .access{
 text-align: center;
 padding-top: 3rem;
+}
+main .access h4{
+font-weight: 600;
+}
+main .access p{
+opacity: 0.6;
 }
 
 main .devices{
@@ -111,6 +138,12 @@ margin: 0 auto;
 main .icons .icons-container .charge{
 text-align:center;
 }
+main .icons .icons-container .charge h4{
+font-weight: 600;
+}
+main .icons .icons-container .charge p{
+opacity: 0.6;
+}
 
 
 main .icons .icons-container .container{
@@ -124,11 +157,14 @@ text-align: center;
 }
 .icons-container .container div h3{
 padding-top: 1rem;
+font-weight: 600;
 
 } .icons-container .container div p{
 padding-top: 1rem;
 line-height: 1.3;
+opacity: 0.6;
 }
+
 
 main .brands{
 width: 100%;
@@ -149,8 +185,12 @@ text-align: center;
 padding-top: 3.5rem;
 padding-bottom: 3rem;
 }
+.clip h2{
+font-weight:600;
+}
 .clip p{
 padding-top:10px;
+opacity: 0.6;
 }
 
  .clip .buttons{
@@ -173,7 +213,7 @@ background: var(--light-blue);
 main footer{
 width: 100%;
 /* padding-top: 3rem; */
-background-color: var(--gb);
+background-color: var(--light-gray);
 }
 
 footer .footer-container{
@@ -208,6 +248,9 @@ line-height: 1.4;
 }
 .wrapper ul a{
 text-decoration: none;
+color:#000;
+font-weight: 200;
+font-style: normal;
 }
 
 .footer-container .sa{
@@ -215,6 +258,8 @@ list-style:none;
 }
 .sa a{
 text-decoration: none;
+color: #000;
+font-weight: 200;
 }
 .socials{
 display: flex;
@@ -333,13 +378,20 @@ main .brands .brands-container .brands-icons > div{
 margin: auto;
 }
 
-main .hero-text h2,
-main .hero-text p{
+main .hero-text h2{
 padding: 0 0.5rem;
 }
-/* .mac-texts .keep{
-padding:0 0.5rem;
-} */
+main .hero-text p{
+padding:0 1.5rem;
+}
+
+.clip p{
+padding: 0 1.5rem;
+}
+
+.mac-texts .keep p{
+padding:0 1.5rem;
+}
 
 }
 
